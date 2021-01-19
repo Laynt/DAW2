@@ -37,8 +37,8 @@ type DatosTotales = Datos & DatosStr;
 class Animal {
     nombre: string;
     raza: string;
-    peso: number;
-    constructor(nombre: string, raza: string, peso: number) {
+    peso: any;
+    constructor(nombre: string, raza: string, peso: any) {
         this.nombre = nombre;
         this.peso = peso;
         this.raza = raza;
@@ -46,8 +46,8 @@ class Animal {
 
 }
 var nombre1 = (<HTMLInputElement>document.getElementById("text")).value
-var nombre1 = (<HTMLInputElement>document.getElementById("text2")).value
-var nombre1 = (<HTMLInputElement>document.getElementById("text3")).value
+var raza1 = (<HTMLInputElement>document.getElementById("text2")).value
+var peso1 = (<HTMLInputElement>document.getElementById("text3")).value
 
 var animal = new Animal(nombre1, raza1, peso1);
 
