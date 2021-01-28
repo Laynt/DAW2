@@ -68,7 +68,7 @@ echo "\n\n";
 
 //Ejercicio 7
 
-$disparo = new DeathStar;
-echo "$disparo->FireLaser()";
+$disparo = new DeathStar();
+$disparo->fireLaser();
 
 
