@@ -1,19 +1,52 @@
-/*CSS para tamaño móvila aquí*/
-body{
-    background-color: aqua;
-}
-
-@media (min-width: 768px){
-    /*CSS para tamaño entre 768px y 992px */
-    body{
-        background-color:  yellow;
-    }
-    
-}
-
-@media (min-width: 992px){
-    body{
-        background-color:  gray;
-    }
-    
-}
+body {
+    margin: 0;
+   }
+   
+   .container {
+    border: 6px solid black;
+    display: flex;
+   }
+   
+   .flex-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+   }
+   
+   .item-1 {
+    background-color: #B4BF35;
+   }
+   
+   .item-2 {
+    background-color: #B95F21;
+   }
+   
+   .item-3 {
+    background-color: #1C4C56;
+   }
+   
+   .item-4 {
+    background-color: #CFB276;
+   }
+   
+   .item-5 {
+    background-color: #6B0803;
+   }
+   
+   .item-6 {
+    background-color: #B95F21;
+   }
+   
+   .item-7 {
+    background-color: #01243A;
+   }
+   
+   .item-8 {
+    background-color: #AAD041;
+   }
+   
+   .item-9 {
+    background-color: #00FFFF;
+   }
+   
