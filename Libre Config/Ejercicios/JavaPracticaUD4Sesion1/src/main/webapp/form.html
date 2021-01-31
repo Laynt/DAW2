@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="post" action="FormHandlerServlet" 
+          style="width: 310px; border: 1px solid black;" >
+      <table >
+        <tr>
+          <td>Por favor introduzca algún texto:</td>
+          <td><input type="text" name="enteredValue" />          
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input name="options" type="checkbox"  value="option1" />
+            Opción 1</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input name="options" type="checkbox" value="option2" />
+            Opción 2</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input name="options" type="checkbox" value="option3" />
+            Opción 3</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: right;" >
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+    </body>
+</html>
