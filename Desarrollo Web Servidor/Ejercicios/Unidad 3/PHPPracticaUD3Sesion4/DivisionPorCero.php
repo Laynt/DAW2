@@ -1,8 +1,8 @@
 <?php
-class DivisonPorCero extends Exception {
+class DivisionPorCero extends Exception {
     public function errorMessage() {
       
-      return '¡AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!';
+      return '¡JAMÁS DIVIDAS POR CERO!';
     }
     }
   
