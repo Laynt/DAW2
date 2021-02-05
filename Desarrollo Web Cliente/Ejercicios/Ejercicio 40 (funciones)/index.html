@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<script src="salida.js"></script>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Formularios con JS</title>
+		<script type="text/javascript" src="salida.js"></script>
+	</head>	
+	<body> 
+		<br/><br/>   
+		<label for ="tit">Título película a buscar:</label><br/>					
+		<input type="string" id="tit" name="tit" />	
+		<input type="button" onclick="verTitD()" value="VER" />	
+		<br/><br/>
+
+		<label for="num2">Género película a buscar:</label><br>			
+		<input type="number" id="gen" name="num2" />
+		<input type="button" onclick="verGenD()" value="VER" />
+		<br/><br/>
+
+		<label for="estr">¿ Estrenado ? ( true/false):</label><br>			
+		<input type="string" id="estr" name="estr" />
+		<input type="button" onclick="verEstrD()" value="VER" />		
+		<br/><br/>
+
+		<label for="an">Año mínimo de película a buscar:</label><br>			
+		<input type="number" id="an" name="an" />
+		<input type="button" onclick="verAnD()" value="VER" />
+		<br/><br/>
+	</body>
 </html>
