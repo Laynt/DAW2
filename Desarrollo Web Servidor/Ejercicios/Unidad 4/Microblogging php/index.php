@@ -6,14 +6,15 @@ if(!isset($_SESSION['posts'])){
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    //Aquí hacemos la validación
+    
 
     $post['nombre'] = $_POST['nombre'];
     $post['email'] = $_POST['email'];
     $post['titulo'] = $_POST['titulo'];
     $post['comentario'] = $_POST['comentario'];
+    $post['fechaPublicacion'] = date("d/mY");
 
-    $post = $_SESSION['posts'];
+    $posts = $_SESSION['posts'];
     array_push($posts, $post);
     $_SESSION['posts'] = $posts;
 }
@@ -36,6 +37,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     Comentario: <input type="text" rows="10" name="comentario"><br>
     <input type="submit" value="Enviar">
 </form>
+<h2>Datos</h2>
 
+<?php
+$posts = $_SESSION['posts'];
+foreach($posts as $post){
+    echo "<div>";
+    echo "<p>$post[fechaPublicacion]</p> $post[nombre] $post[email]";
+    echo "<br />";
+    echo "<p>$post[titulo]</p>";
+    echo "<br />";
+    echo $post['comentario'];
+    echo "</div>";
+}
+?>
 </body>
 </html>
