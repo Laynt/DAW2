@@ -1,0 +1,29 @@
+doctype html
+html
+head
+  title= title
+  link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+  link(rel='stylesheet', href='/stylesheets/style.css')
+body  
+
+block content
+  h1 Formulario Rol
+  form(method="post", action="/env_mensaje")
+    label Nickname
+    br
+    input.form-control.col-3(type="text", name="nickName")
+    br
+    label Email
+    br
+    input.form-control.col-3(type="text", name="email")
+    br
+    label Poderes
+    br
+    textarea.form-control.col-3(cols="40", rows="10", name="poderes")
+    br
+    input.btn(type="submit", value="Enviar mensaje")
+
+  br
+  br 
+  a(href="/") INICIO
+ 
