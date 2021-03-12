@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bloque1.component.css']
 })
 export class Bloque1Component implements OnInit {
-
-  constructor() { }
+  
+  public titulo: string;
+  
+  constructor() {
+    console.log("Se ha cargado el bloque1");
+    this.titulo = "Este es el bloque 1";
+    
+   }
 
   ngOnInit(): void {
   }

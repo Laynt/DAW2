@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Bloque2Component implements OnInit {
 
-  constructor() { }
+  public titulo : string;
+
+  constructor() {
+    console.log("Se ha cargado el bloque2");
+    this.titulo = "Este es el bloque 2";
+   }
 
   ngOnInit(): void {
   }
