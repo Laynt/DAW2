@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { Bloque3Component } from './components/bloque3/bloque3.component';
 import { PiePaginaComponent } from './components/pie-pagina/pie-pagina.component';
 
 
+
 @NgModule({
   declarations: [   // Lo que este aquí podrá ser utilizado en cualquier parte de nuestra app
     AppComponent,
@@ -18,10 +20,13 @@ import { PiePaginaComponent } from './components/pie-pagina/pie-pagina.component
     Bloque1Component,
     Bloque2Component,
     Bloque3Component,
-    PiePaginaComponent
+    PiePaginaComponent,
+
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

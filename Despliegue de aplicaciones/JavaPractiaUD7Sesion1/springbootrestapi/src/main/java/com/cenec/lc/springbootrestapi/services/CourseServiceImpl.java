@@ -8,8 +8,8 @@ import com.cenec.lc.springbootrestapi.repositories.CourseRepository;
 import com.cenec.lc.springbootrestapi.repositories.InstructorRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -21,10 +21,12 @@ public class CourseServiceImpl implements CourseService {
     @Autowired
     private InstructorRepository instructorRepository;
  
+    //Encontrar curso a traves del id de un instructor
     public Page<Course> findByInstructorId(Long instructorId, Pageable pageable) {
         return courseRepository.findByInstructorId(instructorId, pageable);
     }
  
+    //Crear un curso con el id de un instructor
     public Course create(Long instructorId, Course courseData) throws EntityNotFoundException {
  
         Optional<Instructor> instructor = instructorRepository.findById(instructorId);
@@ -38,6 +40,7 @@ public class CourseServiceImpl implements CourseService {
  
     }
  
+    //Actualizar un curso con el id del instructor + curso
     public Course update(Long courseId, Long instructorId, Course courseData) throws EntityNotFoundException {
  
         if (!instructorRepository.existsById(instructorId)) {
@@ -55,6 +58,7 @@ public class CourseServiceImpl implements CourseService {
  
     }
  
+    //Borrar un curso a con el id del instructor + curso
     public void deleteByCourseIdAndInstructorId(Long courseId, Long instructorId) throws EntityNotFoundException {
  
         Optional<Course> loadCourse = courseRepository.findByIdAndInstructorId(courseId, instructorId);
@@ -68,7 +72,5 @@ public class CourseServiceImpl implements CourseService {
         }
  
     }
-
-   
  
 }

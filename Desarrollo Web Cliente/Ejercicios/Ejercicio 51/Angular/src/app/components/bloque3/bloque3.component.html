@@ -1,4 +1,12 @@
 <div id="bloque3">
     <h3>{{titulo}}</h3>
-    <img src="images/angular-image.gif" alt="Gif Angular"> 
+    <div>
+        <label>Nombre:
+            <input [(ngModel)]="persona.name" placeholder="nombre">
+        </label>
+        <span>Nombre: </span>{{persona.name}}
+
+    </div>
+
+    <img class="img-responsive" src="assets/images/angular_image.gif" alt="imagenAngular" width="30%">
 </div>

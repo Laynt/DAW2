@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CourseRepository extends JpaRepository<Course, Long> {
     
-    Page<Course> findByInstructorId(Long instructorId, Pageable pageable);
+    Page<Course> findByInstructorId(Long instructorId, org.springframework.data.domain.Pageable pageable);
     Optional<Course> findByIdAndInstructorId(Long id, Long instructorId);
  
 }

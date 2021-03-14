@@ -1,37 +1,51 @@
-h1{
-    color: #FCA205;
-    font-family: 'Lobster';
 
-}
+.navbar {
+    overflow: hidden;
+    background-color: green;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+  
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  
+ 
+  .navbar a.right {
+    float: right;
+  }
+  
+ 
+  .navbar a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  
+  .navbar a.active {
+    background-color: green;
+    color: white;
+  }
+  
+  
+ 
+  
+  
+  
+  
+  
 
-#lista1 ul { 
-    list-style:none;
-    
-
-}
-
-#lista1 ul li { 
-    font-family:Georgia,serif,Times; 
-    font-size:18px; 
-     
-}
-
-#lista1 ul li a { 
-    display:block;   
-    height:28px; 
-    background-color:#333; 
-    border-left:5px solid #222; 
-    border-right:5px solid #222; 
-    padding-left:10px;
-    text-decoration:none; 
-    color:#bfe1f1; 
-}
-
-#lista1 ul li a:hover { 
-    -moz-transform:rotate(-5deg); 
-    -moz-box-shadow:10px 10px 20px #000000;
-    -webkit-transform:rotate(-5deg); 
-    -webkit-box-shadow:10px 10px 20px #000000;
-    transform:rotate(4deg); box-shadow:10px 10px 20px #000000; 
-    margin-left: 10px;
-}
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
