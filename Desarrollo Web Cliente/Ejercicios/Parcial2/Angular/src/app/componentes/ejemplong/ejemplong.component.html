@@ -1,0 +1,23 @@
+<div id="ejemplong">
+    <h3>{{titulo}}</h3>
+
+    
+
+    <ul>
+        <li *ngFor="let user of users" (click)="onSelected(user)"> <!--ngFor recorrerá cada uno de los elementos de nuestro Array-->
+            {{user.name}}
+
+        </li>
+        
+            
+    </ul>
+
+    <div [ngSwitch]="selection">
+        <div class="block" *ngSwitchCase="users[0]">Pulsa algun elemento de la lista para mostrarlo aquí: {{selection}}</div>
+        <div class="block" *ngSwitchCase="users[1]">Pulsa algun elemento de la lista para mostrarlo aquí: {{selection}}</div>
+        <div class="block" *ngSwitchCase="users[2]">Pulsa algun elemento de la lista para mostrarlo aquí: {{selection}}</div>
+        <div class="block" *ngSwitchDefault>Pulsa algun elemento de la lista para mostrarlo aquí: {{selection}}</div>
+    </div>
+
+    
+</div>

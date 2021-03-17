@@ -10,8 +10,8 @@ export class Bloque1Component implements OnInit {
   public titulo: string;
   
   constructor() {
-    console.log("Se ha cargado el bloque1");
-    this.titulo = "Bloque 1 con ejemplos de directivas ngFor y ngSwitch";
+    console.log("Se ha cargado el ejemplong");
+    this.titulo = "ejemplos de directivas ngFor y ngSwitch";
   }
   selection;
   public users = [{
